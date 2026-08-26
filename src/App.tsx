@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import BudgetOfferSection from './components/BudgetOfferSection';
 import ServicesSection from './components/ServicesSection';
+import LeySection from './components/LeySection';
 import MaterialsSection from './components/MaterialsSection';
 import BeforeAfterSlider from './components/BeforeAfterSlider';
 import InteractiveQuoteCalculator from './components/InteractiveQuoteCalculator';
@@ -40,10 +41,13 @@ export default function App() {
         {/* 3. Comprehensive Services (Remodelación, Pintura, Cierres, Terrazas, Techos) */}
         <ServicesSection onOpenBookingModal={handleOpenBookingModal} />
 
-        {/* 4. Materials Explorer (SIP, Concreto, Metalcon, Madera, Ladrillos) */}
+        {/* 4. Ley del Mono — Regularización de viviendas */}
+        <LeySection onOpenBookingModal={handleOpenBookingModal} />
+
+        {/* 5. Materials Explorer (SIP, Concreto, Metalcon, Madera, Ladrillos) */}
         <MaterialsSection />
 
-        {/* 5. Before & After Interactive Transformations */}
+        {/* 6. Nuestros Trabajos — Galería de proyectos */}
         <BeforeAfterSlider />
 
         {/* 6. Interactive Calculator & WhatsApp Handover */}
