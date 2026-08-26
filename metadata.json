@@ -1,0 +1,8 @@
+{
+  "name": "Remix Construcción y Remodelación Valparaíso",
+  "description": "Servicios profesionales de diseño, arquitectura, construcción y remodelación de hogares en la Región de Valparaíso, Chile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
