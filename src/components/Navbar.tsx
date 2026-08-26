@@ -70,7 +70,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-4 xl:gap-5" id="desktop-nav-menu">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7" id="desktop-nav-menu">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -87,7 +87,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           </nav>
 
           {/* Right Action buttons */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3 ml-5 xl:ml-8">
             <a
               id="nav-whatsapp-direct-btn"
               href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(
