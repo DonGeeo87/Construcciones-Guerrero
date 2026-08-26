@@ -36,23 +36,23 @@ export default function Footer({ onOpenBookingModal }: FooterProps) {
               </div>
               <div className="flex flex-col">
                 <span className="font-['Outfit'] font-bold text-xl text-slate-100">
-                  Valparaíso <span className="text-blue-500">Obras</span>
+                  Construcciones <span className="text-blue-500">Guerrero</span>
                 </span>
                 <span className="text-[11px] text-slate-400 font-medium tracking-wide uppercase">
-                  Arquitectura & Construcción V Región
+                  Remodelaciones & Construcción V Región
                 </span>
               </div>
             </div>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Empresa especialista en diseño arquitectónico, remodelación y edificación habitacional. Expertos en terrenos en pendiente, zonas costeras e interiores en la Región de Valparaíso, Chile.
+              Constructores expertos en remodelaciones, pintura, cierres perimetrales, portones, muros, terrazas, techos y quinchos en toda la Región de Valparaíso, Chile. Trabajo serio, presupuesto transparente y obras que duran.
             </p>
 
             {/* Inclusions highlight */}
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-xs text-slate-300 space-y-1">
               <div className="text-blue-400 font-bold flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4" />
-                <span>Presupuesto con Imágenes 3D: $30.000</span>
+                <span>Presupuesto con Visita en Terreno: $30.000</span>
               </div>
               <p className="text-slate-400 text-[11px]">
                 Incluye visita en terreno y asesoría técnica. <strong>100% descontable</strong> si contratas la obra.
@@ -69,7 +69,7 @@ export default function Footer({ onOpenBookingModal }: FooterProps) {
               <li><a href="#presupuesto-30k" className="hover:text-blue-400 transition-colors">Presupuesto $30K</a></li>
               <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Servicios Integrales</a></li>
               <li><a href="#materiales" className="hover:text-blue-400 transition-colors">Materiales & SIP</a></li>
-              <li><a href="#antes-despues" className="hover:text-blue-400 transition-colors">Antes y Después</a></li>
+              <li><a href="#trabajos" className="hover:text-blue-400 transition-colors">Nuestros Trabajos</a></li>
               <li><a href="#testimonios" className="hover:text-blue-400 transition-colors">Opiniones Clientes</a></li>
               <li><a href="#cotizador" className="hover:text-blue-400 transition-colors">Cotizador Online</a></li>
               <li><a href="#cobertura" className="hover:text-blue-400 transition-colors">Mapa Cobertura</a></li>
@@ -108,7 +108,7 @@ export default function Footer({ onOpenBookingModal }: FooterProps) {
               <span className="text-[11px] text-slate-500 block mb-1">Garantía por contrato:</span>
               <div className="flex items-center gap-1.5 text-xs text-emerald-400 font-semibold">
                 <ShieldCheck className="w-4 h-4" />
-                <span>10 años estructurales (LGUC)</span>
+                <span>Obra respaldada y garantizada</span>
               </div>
             </div>
           </div>
@@ -160,11 +160,11 @@ export default function Footer({ onOpenBookingModal }: FooterProps) {
         {/* Bottom Bar with Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} Valparaíso Obras & Remodelaciones. Todos los derechos reservados. Región de Valparaíso, Chile.
+            &copy; {new Date().getFullYear()} Construcciones Guerrero. Todos los derechos reservados. Región de Valparaíso, Chile.
           </div>
 
           <div className="flex items-center gap-4">
-            <span>Diseño Arquitectónico • Construcción • Remodelaciones</span>
+            <span>Remodelaciones • Construcción • Pintura • Cierres y Terrazas</span>
             <button
               onClick={scrollToTop}
               className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-1"

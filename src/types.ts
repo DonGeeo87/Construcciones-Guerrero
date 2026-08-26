@@ -40,13 +40,13 @@ export interface Testimonial {
 export interface ProjectShowcase {
   id: string;
   title: string;
+  location: string;
   commune: string;
   category: 'construccion' | 'remodelacion' | 'ampliacion' | 'terrazas';
   material: string;
   description: string;
   beforeImage?: string;
   afterImage: string;
-  render3dImage?: string;
   sqm: number;
   duration: string;
   features: string[];

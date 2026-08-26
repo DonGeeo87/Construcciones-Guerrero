@@ -39,7 +39,7 @@ export default function CoverageMapSection({ onOpenBookingModal }: CoverageMapSe
           </h2>
 
           <p className="text-slate-600 text-base">
-            Contamos con cuadrillas activas y arquitectos que se trasladan directamente a tu propiedad para realizar el levantamiento técnico de $30.000 (100% descontable).
+            Contamos con cuadrillas activas que se trasladan directamente a tu propiedad para realizar la visita técnica de $30.000 (100% descontable).
           </p>
         </div>
 

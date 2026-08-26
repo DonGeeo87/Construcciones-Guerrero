@@ -26,11 +26,11 @@ export default function ServicesSection({ onOpenBookingModal }: ServicesSectionP
           </div>
 
           <h2 className="font-['Outfit'] text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
-            De la Idea al Plano, y del Plano a la Realidad
+            Servicios de Construcción que Necesitas
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg">
-            Abarcamos cada fase de tu proyecto con arquitectos, constructores civiles y cuadrillas de maestros especializados en toda la Región de Valparaíso.
+            Nos especializamos en remodelaciones, pintura, cierres perimetrales, terrazas, techos y quinchos en toda la Región de Valparaíso. Trabajo de calidad con maestros y cuadrillas profesionales.
           </p>
         </div>
 

@@ -58,7 +58,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       `🗓️ *Fecha sugerida:* ${preferredDate || 'Lo antes posible'} (${timeSlot})`,
       `🔨 *Proyecto:* ${projectType}`,
       description ? `📝 *Detalles:* ${description}` : '',
-      `✨ *Entiendo que los $30.000 incluyen visita técnica, asesoría y diseño 3D, y se descuentan al 100% al contratar la obra.*`
+      `✨ *Entiendo que los $30.000 incluyen visita técnica, asesoría y presupuesto detallado, y se descuentan al 100% al contratar la obra.*`
     ].filter(Boolean);
 
     return `https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
@@ -84,7 +84,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <span>Visita Técnica en Terreno • Región de Valparaíso</span>
             </div>
             <h3 className="font-['Outfit'] text-xl sm:text-2xl font-bold text-white">
-              Agendar Presupuesto & Diseño 3D ($30.000 CLP)
+              Agendar Presupuesto & Visita ($30.000 CLP)
             </h3>
           </div>
 
@@ -111,7 +111,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   ¡Solicitud de Visita Preparada con Éxito!
                 </h4>
                 <p className="text-slate-300 text-xs sm:text-sm">
-                  Hemos organizado los datos de tu propiedad en <strong>{commune}</strong>. Para coordinar la hora exacta y confirmar la asistencia del arquitecto, abre el chat directo de WhatsApp:
+                  Hemos organizado los datos de tu propiedad en <strong>{commune}</strong>. Para coordinar la hora exacta y confirmar la visita del profesional, abre el chat directo de WhatsApp:
                 </p>
               </div>
 
@@ -123,8 +123,8 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 </div>
                 <ul className="space-y-1 text-slate-400">
                   <li>• Asistencia presencial en tu terreno ({commune})</li>
-                  <li>• Asesoría en materiales (SIP, hormigón, metal, madera, ladrillo)</li>
-                  <li>• Imágenes 3D de cómo quedará tu propiedad</li>
+                  <li>• Asesoría en materiales y soluciones de obra</li>
+                  <li>• Presupuesto detallado y desglosado</li>
                   <li>• <strong>100% descontable</strong> si ejecutas la obra</li>
                 </ul>
               </div>
@@ -156,7 +156,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <div className="bg-blue-950/50 border border-blue-500/30 rounded-xl p-3.5 flex items-start gap-3">
                 <Sparkles className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                 <p className="text-xs text-blue-200 leading-relaxed">
-                  <strong>Valor de la visita: $30.000 CLP.</strong> Incluye visita en terreno, asesoría constructiva y diseño 3D en tu espacio real. <strong>Si contratas la obra, este valor se descuenta al 100% del total.</strong>
+                  <strong>Valor de la visita: $30.000 CLP.</strong> Incluye visita en terreno, asesoría constructiva y un presupuesto detallado de tu obra. <strong>Si contratas la obra, este valor se descuenta al 100% del total.</strong>
                 </p>
               </div>
 
@@ -279,7 +279,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   <option value="Ampliación Segundo Piso / Mansarda">Ampliación Segundo Piso / Mansarda</option>
                   <option value="Quincho / Terraza Panorámica">Quincho / Pérgola / Terraza Panorámica</option>
                   <option value="Obra en Pendiente / Muro de Contención">Obra en Pendiente / Muro de Contención</option>
-                  <option value="Diseño Arquitectónico & Planos DOM">Diseño Arquitectónico & Planos DOM</option>
+                  <option value="Planos y Trámites Municipales (DOM)">Planos y Trámites Municipales (DOM)</option>
                 </select>
               </div>
 

@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
           </h2>
 
           <p className="text-slate-600 text-base">
-            Conoce las experiencias reales de familias que confiaron en nosotros para diseñar, remodelar y construir sus hogares en Valparaíso, Viña, Concón y el interior.
+            Conoce las experiencias reales de familias que confiaron en nosotros para remodelar y construir sus hogares en Valparaíso, Viña, Concón y el interior.
           </p>
 
           {/* Social Proof Stats Banner */}
@@ -157,7 +157,7 @@ export default function TestimonialsSection() {
             Únete a cientos de familias con proyectos exitosos en la región
           </h3>
           <p className="text-slate-300 text-xs sm:text-sm mb-6">
-            Empieza con nuestra visita en terreno de $30.000 y visualiza tu diseño antes de comenzar.
+            Empieza con nuestra visita en terreno de $30.000 y conoce tu presupuesto antes de comenzar.
           </p>
           <a
             href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(

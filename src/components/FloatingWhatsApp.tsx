@@ -25,12 +25,12 @@ export default function FloatingWhatsApp() {
           </div>
 
           <p className="text-slate-300 text-[11px] leading-relaxed">
-            Visita técnica y diseño 3D por <strong>$30.000</strong> (100% descontable). ¡Hablemos por WhatsApp!
+            Visita técnica y presupuesto detallado por <strong>$30.000</strong> (100% descontable). ¡Hablemos por WhatsApp!
           </p>
 
           <a
             href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(
-              'Hola, vi su sitio web y me gustaría hablar con un arquitecto/constructor para mi proyecto en la V Región.'
+              'Hola, vi su sitio web y me gustaría hablar con un profesional para mi proyecto en la V Región.'
             )}`}
             target="_blank"
             rel="noopener noreferrer"

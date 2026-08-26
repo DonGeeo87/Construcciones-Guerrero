@@ -93,7 +93,7 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
   // Build customized WhatsApp message string
   const generateWhatsAppMessage = () => {
     const lines = [
-      `¡Hola! Vengo del cotizador web de Valparaíso Obras & Remodelaciones:`,
+      `¡Hola! Vengo del cotizador web de Construcciones Guerrero:`,
       `📌 *Proyecto:* ${currentProject.title}`,
       `📍 *Comuna V Región:* ${commune}`,
       `📐 *Superficie estimada:* ${sqm} m²`,
@@ -102,7 +102,7 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
       `📋 *Requiere regularización/permiso:* ${needsPermits ? 'Sí' : 'No / En evaluación'}`,
       clientName ? `👤 *Nombre:* ${clientName}` : '',
       customNotes ? `💬 *Detalles adicionales:* ${customNotes}` : '',
-      `✨ *Me interesa agendar la visita en terreno de $30.000 con diseño 3D descontable.*`
+      `✨ *Me interesa agendar la visita en terreno de $30.000 con presupuesto detallado.*`
     ].filter(Boolean);
 
     return encodeURIComponent(lines.join('\n'));
@@ -262,7 +262,7 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
                   className="mt-1 w-4 h-4 rounded text-blue-600 focus:ring-blue-500 bg-slate-900 border-slate-700"
                 />
                 <span className="text-xs text-slate-300">
-                  <strong>Planos & Permiso Municipal (DOM):</strong> Requiere regularización o expediente de arquitectura.
+                  <strong>Planos & Permiso Municipal (DOM):</strong> Requiere regularización o trámites municipales.
                 </span>
               </label>
             </div>
@@ -334,7 +334,7 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
                 <span className="font-semibold text-slate-100">{slopeTerrain ? 'Pendiente / Cerro' : 'Plano'}</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-800 text-slate-300">
-                <span className="text-slate-400">Arquitectura & DOM:</span>
+                <span className="text-slate-400">Planos & DOM:</span>
                 <span className="font-semibold text-slate-100">{needsPermits ? 'Incluido' : 'No requerido'}</span>
               </div>
             </div>
@@ -342,11 +342,11 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
             {/* $30.000 Highlight reminder in summary */}
             <div className="bg-blue-600/15 border border-blue-500/30 rounded-xl p-4 space-y-2">
               <div className="flex items-center justify-between text-xs text-blue-300 font-bold">
-                <span>Visita Técnica & Diseño 3D:</span>
+                <span>Visita Técnica & Presupuesto:</span>
                 <span className="text-base text-blue-400 font-extrabold">$30.000 CLP</span>
               </div>
               <p className="text-[11px] text-blue-200/90 leading-snug">
-                Incluye visita en terreno, asesoría, imágenes de cómo quedará tu propiedad y se descuenta al 100% de la obra contratada.
+                Incluye visita en terreno, asesoría y un presupuesto detallado que se descuenta al 100% de la obra contratada.
               </p>
             </div>
 

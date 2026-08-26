@@ -1,7 +1,6 @@
 import { 
   MapPin, 
   Lightbulb, 
-  Layers, 
   Eye, 
   FileSpreadsheet, 
   CheckCircle2, 
@@ -11,7 +10,7 @@ import {
   ArrowRight,
   TrendingDown
 } from 'lucide-react';
-import { BUDGET_OFFER_DETAILS, WHATSAPP_RAW_NUMBER } from '../data/content';
+import { WHATSAPP_RAW_NUMBER } from '../data/content';
 
 interface BudgetOfferSectionProps {
   onOpenBookingModal: () => void;
@@ -28,36 +27,29 @@ export default function BudgetOfferSection({ onOpenBookingModal }: BudgetOfferSe
     },
     {
       number: '02',
-      title: 'Asesoramiento Arquitectónico',
-      description: 'Te orientamos sobre la mejor alternativa constructiva (madera, hormigón, metalcon, paneles SIP o ladrillo), optimizando iluminación natural, aislación térmica y presupuesto.',
+      title: 'Asesoramiento Profesional',
+      description: 'Te orientamos sobre la mejor solución para tu espacio: materiales, alcances de la obra, distribución y cómo optimizar tu inversión según lo que realmente necesitas.',
       icon: Lightbulb,
       badge: 'Solución a tu Medida'
     },
     {
       number: '03',
-      title: 'Diseño e Imágenes 3D Fotorrealistas',
-      description: 'Desarrollamos el modelado digital de cómo lucirá exactamente tu casa, remodelación de cocina/baño, ampliación o terraza terminada.',
-      icon: Layers,
-      badge: 'Renders Fidedignos'
-    },
-    {
-      number: '04',
-      title: 'Visualización Espacial en tu Espacio Real',
-      description: 'Comprobarás en tu propio terreno las proporciones, la vista hacia el entorno o el mar, la ventilación y la armonía con el paisaje antes de iniciar cualquier faena.',
+      title: 'Revisión en tu Propio Espacio',
+      description: 'Evaluamos muros, techos, pisos, condiciones de acceso y pendiente del terreno directamente en tu propiedad antes de proponer cualquier trabajo.',
       icon: Eye,
       badge: 'Cero Sorpresas'
     },
     {
-      number: '05',
+      number: '04',
       title: 'Cubicación & Carta Gantt',
       description: 'Presupuesto transparente y detallado ítem por ítem con cotización de materiales, costos de mano de obra y cronograma estricto de entrega por etapas.',
       icon: FileSpreadsheet,
       badge: 'Transparencia Total'
     },
     {
-      number: '06',
+      number: '05',
       title: '¡100% Descontable de tu Obra!',
-      description: 'Si decides ejecutar la obra con nosotros, los $30.000 pagados se descuentan de forma automática del primer pago. ¡Todo el diseño y la visita te resultan gratis!',
+      description: 'Si decides ejecutar la obra con nosotros, los $30.000 pagados se descuentan de forma automática del primer pago. ¡Tu visita y asesoría te resultan gratis!',
       icon: TrendingDown,
       badge: 'Reembolso Garantizado'
     }
@@ -75,15 +67,14 @@ export default function BudgetOfferSection({ onOpenBookingModal }: BudgetOfferSe
           </div>
 
           <h2 className="font-['Outfit'] text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
-            Presupuesto & Diseño 3D por solo{' '}
+            Presupuesto con Visita en Terreno por solo{' '}
             <span className="text-blue-600">
               $30.000 CLP
             </span>
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            No cobramos por dar un número al azar. Realizamos un estudio técnico y arquitectónico completo en tu propiedad, 
-            mostrándote <strong>con imágenes exactas cómo quedará tu proyecto</strong> antes de construir.
+            No cobramos por dar un número al azar. Realizamos una revisión real de tu espacio y te entregamos un <strong>presupuesto detallado y transparente</strong> para tu remodelación, pintura, cierre, terraza o techado.
           </p>
 
           {/* Guarantee banner for 100% discount */}
@@ -97,11 +88,11 @@ export default function BudgetOfferSection({ onOpenBookingModal }: BudgetOfferSe
           </div>
         </div>
 
-        {/* 6 Step Interactive Cards Grid */}
+        {/* Steps Interactive Cards Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
           {steps.map((step) => {
             const Icon = step.icon;
-            const isDiscountCard = step.number === '06';
+            const isDiscountCard = step.number === '05';
 
             return (
               <div
@@ -148,10 +139,10 @@ export default function BudgetOfferSection({ onOpenBookingModal }: BudgetOfferSe
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-10 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8 text-white">
           <div className="space-y-2 text-center lg:text-left">
             <h3 className="font-['Outfit'] text-2xl sm:text-3xl font-bold text-white">
-              ¿Listo para ver cómo quedará tu propiedad?
+              ¿Listo para un presupuesto sin sorpresas?
             </h3>
             <p className="text-slate-300 text-sm max-w-xl">
-              Agenda tu visita técnica en terreno con un arquitecto. Revisaremos tu espacio, evaluaremos el tipo de suelo y diseñaremos tu propuesta 3D.
+              Agenda tu visita en terreno. Revisaremos tu espacio, evaluaremos el alcance de la obra y te entregaremos un presupuesto detallado y descontable.
             </p>
           </div>
 

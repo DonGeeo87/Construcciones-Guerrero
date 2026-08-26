@@ -34,10 +34,10 @@ export default function App() {
         {/* 1. Hero with value proposition and $30k highlight */}
         <Hero onOpenBookingModal={handleOpenBookingModal} />
 
-        {/* 2. Detailed $30.000 Budget & 3D Design Offer with exact inclusions */}
+        {/* 2. Detailed $30.000 Budget & Visit Offer with exact inclusions */}
         <BudgetOfferSection onOpenBookingModal={handleOpenBookingModal} />
 
-        {/* 3. Comprehensive Services (Diseño, Arquitectura, Construcción, Remodelación) */}
+        {/* 3. Comprehensive Services (Remodelación, Pintura, Cierres, Terrazas, Techos) */}
         <ServicesSection onOpenBookingModal={handleOpenBookingModal} />
 
         {/* 4. Materials Explorer (SIP, Concreto, Metalcon, Madera, Ladrillos) */}
@@ -52,7 +52,7 @@ export default function App() {
         {/* 7. Satisfied Clients Testimonials */}
         <TestimonialsSection />
 
-        {/* 8. Regional Coverage (Viña, Valpo, Concón, Quilpué, etc.) */}
+        {/* 8. Regional Coverage (Viña, Valparaíso, Concón, Quilpué, etc.) */}
         <CoverageMapSection onOpenBookingModal={handleOpenBookingModal} />
 
         {/* 9. Frequently Asked Questions */}

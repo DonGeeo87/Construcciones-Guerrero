@@ -31,7 +31,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
     { name: 'Presupuesto $30K', href: '#presupuesto-30k', highlight: true },
     { name: 'Servicios', href: '#servicios' },
     { name: 'Materiales', href: '#materiales' },
-    { name: 'Antes y Después', href: '#antes-despues' },
+    { name: 'Nuestros Trabajos', href: '#trabajos' },
     { name: 'Opiniones', href: '#testimonios' },
     { name: 'Cotizador', href: '#cotizador' },
     { name: 'Cobertura', href: '#cobertura' },
@@ -54,24 +54,24 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           {/* Logo & Brand Identity */}
           <a href="#" className="flex items-center gap-3 group" id="nav-brand-logo">
             <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-white font-bold text-xl shadow-sm group-hover:bg-blue-600 transition-colors">
-              V
+              G
             </div>
             <div className="flex flex-col">
               <span className={`font-['Outfit'] font-bold text-xl leading-tight tracking-tight flex items-center gap-1 ${
                 isScrolled ? 'text-slate-900' : 'text-white'
               }`}>
-                Valpo<span className="text-blue-600">Arquitectura</span>
+                Construcciones <span className="text-blue-600">Guerrero</span>
               </span>
               <span className={`text-[10px] font-semibold tracking-wider uppercase ${
                 isScrolled ? 'text-slate-500' : 'text-slate-400'
               }`}>
-                Arquitectura & Construcción V Región
+                Remodelaciones & Construcción V Región
               </span>
             </div>
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-6" id="desktop-nav-menu">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-5" id="desktop-nav-menu">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -153,7 +153,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-900 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-blue-600 shrink-0" />
-              <span>Presupuesto con diseño 3D: <strong>$30.000 CLP</strong></span>
+              <span>Presupuesto con visita en terreno: <strong>$30.000 CLP</strong></span>
             </div>
             <span className="bg-blue-600 text-white px-2 py-0.5 rounded text-[10px] font-bold uppercase">
               100% Descontable

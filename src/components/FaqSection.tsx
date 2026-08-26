@@ -32,7 +32,7 @@ export default function FaqSection() {
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base">
-            Conoce cómo funciona el presupuesto de $30.000, los plazos de diseño 3D, formas de pago y garantías legales.
+            Conoce cómo funciona el presupuesto de $30.000, los plazos de la visita en terreno, formas de pago y garantías.
           </p>
         </div>
 
