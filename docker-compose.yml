@@ -10,6 +10,21 @@ services:
     networks:
       - proxy-network
 
+  api:
+    build: ./api
+    container_name: construccionesguerrero-api
+    restart: unless-stopped
+    environment:
+      - PORT=3026
+      - DATA_DIR=/data
+    volumes:
+      - construcciones_leads:/data
+    networks:
+      - proxy-network
+
+volumes:
+  construcciones_leads:
+
 networks:
   proxy-network:
     external: true

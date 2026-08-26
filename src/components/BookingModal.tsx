@@ -33,8 +33,31 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    // Enviar lead al backend
+    try {
+      await fetch('/api/leads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          tipo: 'visita',
+          nombre: name,
+          telefono: phone,
+          comuna: commune,
+          direccion: address,
+          fecha_visita: preferredDate,
+          horario: timeSlot,
+          tipo_proyecto: projectType,
+          descripcion: description
+        })
+      });
+    } catch (err) {
+      // No bloquear el flujo si el API falla — el WhatsApp sigue siendo el canal
+      console.error('Error guardando lead:', err);
+    }
+
     setIsSuccess(true);
 
     try {

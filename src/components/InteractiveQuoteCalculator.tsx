@@ -357,6 +357,24 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
                 href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${generateWhatsAppMessage()}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  // Guardar lead del cotizador
+                  try {
+                    fetch('/api/leads', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        tipo: 'cotizador',
+                        nombre: clientName,
+                        telefono: '',
+                        comuna: commune,
+                        direccion: '',
+                        tipo_proyecto: currentProject.title,
+                        descripcion: `Superficie ${sqm} m² · Material: ${material} · Pendiente: ${slopeTerrain ? 'Sí' : 'No'} · Permiso DOM: ${needsPermits ? 'Sí' : 'No'}${customNotes ? ' · Notas: ' + customNotes : ''}`
+                      })
+                    }).catch(() => {});
+                  } catch (e) { /* no bloquear WhatsApp */ }
+                }}
                 className="w-full flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-5 rounded-xl shadow-md transition-all text-sm active:scale-95 group"
               >
                 <MessageSquare className="w-5 h-5 fill-current group-hover:scale-110 transition-transform" />
