@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;overflow:hidden;font-family:'Plus Jakarta Sans',sans-serif}
+  .canvas{position:relative;width:1200px;height:630px;background:#0f172a;overflow:hidden}
+  /* decoración */
+  .glow{position:absolute;border-radius:50%;background:#3b82f6;opacity:.18;filter:blur(120px)}
+  .glow-1{width:420px;height:420px;top:-140px;left:-100px}
+  .glow-2{width:380px;height:380px;bottom:-140px;right:-90px;background:#1d4ed8}
+  .grid-lines{position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px}
+  /* bandas */
+  .band{position:absolute;left:0;right:0;height:8px;background:#3b82f6}
+  .band-top{top:0}.band-bottom{bottom:0}
+  .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 80px}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.4);color:#93c5fd;font-weight:700;font-size:19px;letter-spacing:3px;text-transform:uppercase;padding:10px 22px;border-radius:999px;margin-bottom:28px}
+  .badge .dot{width:8px;height:8px;border-radius:50%;background:#3b82f6}
+  .title{font-family:'Outfit',sans-serif;font-weight:800;font-size:88px;line-height:1.04;color:#ffffff;margin-bottom:24px}
+  .title .accent{color:#3b82f6}
+  .subtitle{font-size:27px;line-height:1.45;color:#cbd5e1;max-width:920px;margin-bottom:36px}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:#3b82f6;color:#fff;font-weight:700;font-size:25px;padding:18px 44px;border-radius:14px;box-shadow:0 10px 40px rgba(59,130,246,.35)}
+  .cta span{font-size:18px;opacity:.85}
+  .footer{position:absolute;left:40px;bottom:28px;color:#64748b;font-size:16px;font-weight:500}
+  .footer .url{color:#94a3b8}
+</style></head>
+<body>
+  <div class="canvas">
+    <div class="glow glow-1"></div><div class="glow glow-2"></div>
+    <div class="grid-lines"></div>
+    <div class="band band-top"></div><div class="band band-bottom"></div>
+    <div class="content">
+      <div class="badge"><span class="dot"></span>Constructores · Región de Valparaíso</div>
+      <div class="title">Construcciones<br><span class="accent">Guerrero</span></div>
+      <div class="subtitle">Remodelaciones · Pintura · Cierres y Portones · Terrazas, Quinchos y Techos</div>
+      <div class="cta">Presupuesto con visita en terreno · <span>$30.000</span></div>
+    </div>
+    <div class="footer">construcciones<span class="url">.codigoguerrero.dev</span></div>
+  </div>
+</body></html>
