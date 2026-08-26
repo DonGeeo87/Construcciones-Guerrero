@@ -28,7 +28,6 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
   }, []);
 
   const navLinks = [
-    { name: 'Presupuesto $30K', href: '#presupuesto-30k', highlight: true },
     { name: 'Servicios', href: '#servicios' },
     { name: 'Materiales', href: '#materiales' },
     { name: 'Nuestros Trabajos', href: '#trabajos' },
@@ -80,15 +79,8 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
                   isScrolled 
                     ? 'text-slate-600 hover:text-blue-600' 
                     : 'text-slate-300 hover:text-blue-400'
-                } ${
-                  link.highlight
-                    ? isScrolled 
-                      ? 'bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-xs'
-                      : 'bg-blue-600/20 text-blue-400 border border-blue-500/30 px-3 py-1.5 rounded-lg flex items-center gap-1.5'
-                    : ''
                 }`}
               >
-                {link.highlight && <Sparkles className="w-3.5 h-3.5 text-blue-500" />}
                 {link.name}
               </a>
             ))}
