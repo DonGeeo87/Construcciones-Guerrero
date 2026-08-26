@@ -11,7 +11,9 @@ services:
       - proxy-network
 
   api:
-    build: ./api
+    build:
+      context: .
+      dockerfile: api/Dockerfile
     container_name: construccionesguerrero-api
     restart: unless-stopped
     environment:
