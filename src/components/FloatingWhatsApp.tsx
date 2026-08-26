@@ -25,7 +25,7 @@ export default function FloatingWhatsApp() {
           </div>
 
           <p className="text-slate-300 text-[11px] leading-relaxed">
-            Visita técnica y presupuesto detallado por <strong>$30.000</strong> (100% descontable). ¡Hablemos por WhatsApp!
+            Visita técnica y presupuesto detallado desde <strong>$30.000</strong> (100% descontable). ¡Hablemos por WhatsApp!
           </p>
 
           <a

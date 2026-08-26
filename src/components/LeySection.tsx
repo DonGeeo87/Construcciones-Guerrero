@@ -158,7 +158,7 @@ export default function LeySection({ onOpenBookingModal }: LeySectionProps) {
 
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5 mb-6">
                 <p className="text-xs text-emerald-800 font-medium">
-                  <strong>Valor de la evaluación: $30.000</strong> — incluye visita en terreno y asesoría. <strong>100% descontable</strong> si contratas la gestión u obra.
+                  <strong>Valor de la evaluación: desde $30.000</strong> — incluye visita en terreno y asesoría. <strong>100% descontable</strong> si contratas la gestión u obra.
                 </p>
               </div>
 

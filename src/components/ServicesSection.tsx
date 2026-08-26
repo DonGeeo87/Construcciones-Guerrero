@@ -108,7 +108,7 @@ export default function ServicesSection({ onOpenBookingModal }: ServicesSectionP
                     onClick={onOpenBookingModal}
                     className="w-full sm:w-1/2 flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 font-bold py-2.5 px-4 rounded-lg text-xs transition-colors"
                   >
-                    <span>Ver Visita en Terreno ($30K)</span>
+                    <span>Ver Visita (desde $30K)</span>
                   </button>
                 </div>
 

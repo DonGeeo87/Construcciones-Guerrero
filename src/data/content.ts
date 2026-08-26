@@ -13,9 +13,10 @@ export const WHATSAPP_DEFAULT_URL = `https://wa.me/${WHATSAPP_RAW_NUMBER}?text=$
 )}`;
 
 export const BUDGET_OFFER_DETAILS = {
-  priceClp: 30000,
-  formattedPrice: '$30.000 CLP',
+  priceClp: 30000, // mínimo, depende de la distancia desde Limache/Quilpué
+  formattedPrice: 'Desde $30.000 CLP',
   refundPolicy: 'Si decides contratar nuestro servicio, este valor se descuenta íntegramente del costo final de tu proyecto.',
+  visitFrom: 'Desde $30.000 CLP, según la distancia desde Limache/Quilpué',
   inclusions: [
     {
       title: 'Visita Técnica en Terreno',
@@ -336,8 +337,8 @@ export const COMMUNES_COVERED: CommuneCoverage[] = [
 
 export const FAQS = [
   {
-    question: '¿Por qué cobran $30.000 por el presupuesto y la visita?',
-    answer: 'A diferencia de una simple cotización telefónica o "al ojo", nuestro servicio de $30.000 incluye la presencia física de un profesional de nuestro equipo en tu propiedad en cualquier comuna de la V Región, un análisis real del terreno o estructura existente y un presupuesto detallado ítem por ítem. Este valor filtra visitas no comprometidas y garantiza que dedicamos horas profesionales reales a tu proyecto. Y lo mejor: si decides contratar con nosotros, se te descuenta el 100% de los $30.000 en el primer estado de pago.'
+    question: '¿Por qué cobran desde $30.000 por la visita y presupuesto?',
+    answer: 'A diferencia de una simple cotización telefónica o "al ojo", nuestro servicio (desde $30.000) incluye la presencia física de un profesional de nuestro equipo en tu propiedad en cualquier comuna de la V Región, un análisis real del terreno o estructura existente y un presupuesto detallado ítem por ítem. El valor parte en $30.000 y varía según la distancia desde nuestro punto de partida en Limache y Quilpué. Este valor filtra visitas no comprometidas y garantiza que dedicamos horas profesionales reales a tu proyecto. Y lo mejor: si decides contratar con nosotros, se te descuenta el 100% en el primer estado de pago.'
   },
   {
     question: '¿Qué incluye exactamente la visita en terreno?',

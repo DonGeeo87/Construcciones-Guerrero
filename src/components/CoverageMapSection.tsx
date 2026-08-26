@@ -39,7 +39,7 @@ export default function CoverageMapSection({ onOpenBookingModal }: CoverageMapSe
           </h2>
 
           <p className="text-slate-600 text-base">
-            Contamos con cuadrillas activas que se trasladan directamente a tu propiedad para realizar la visita técnica de $30.000 (100% descontable).
+            Contamos con cuadrillas activas que se trasladan directamente a tu propiedad para realizar la visita técnica desde $30.000 (100% descontable).
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function CoverageMapSection({ onOpenBookingModal }: CoverageMapSe
               </div>
 
               <div className="pt-4 mt-3 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-[11px] text-slate-400">Visita $30K Descontable</span>
+                <span className="text-[11px] text-slate-400">Visita desde $30K Descontable</span>
                 <a
                   href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(
                     `Hola! Quiero coordinar una visita técnica en *${commune.name}* (V Región).`

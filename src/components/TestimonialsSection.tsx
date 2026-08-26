@@ -157,7 +157,7 @@ export default function TestimonialsSection() {
             Únete a cientos de familias con proyectos exitosos en la región
           </h3>
           <p className="text-slate-300 text-xs sm:text-sm mb-6">
-            Empieza con nuestra visita en terreno de $30.000 y conoce tu presupuesto antes de comenzar.
+            Empieza con nuestra visita en terreno (desde $30.000) y conoce tu presupuesto antes de comenzar.
           </p>
           <a
             href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(

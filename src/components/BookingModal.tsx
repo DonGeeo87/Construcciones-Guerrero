@@ -73,7 +73,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   const generateWhatsAppConfirmationUrl = () => {
     const lines = [
-      `¡Hola! Deseo confirmar la reserva de *Visita en Terreno ($30.000 CLP)*:`,
+      `¡Hola! Deseo confirmar la reserva de *Visita en Terreno (desde $30.000 CLP)*:`,
       `👤 *Cliente:* ${name || 'Sin especificar'}`,
       `📞 *Teléfono:* ${phone || 'Sin especificar'}`,
       `📍 *Comuna V Región:* ${commune}`,
@@ -81,7 +81,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
       `🗓️ *Fecha sugerida:* ${preferredDate || 'Lo antes posible'} (${timeSlot})`,
       `🔨 *Proyecto:* ${projectType}`,
       description ? `📝 *Detalles:* ${description}` : '',
-      `✨ *Entiendo que los $30.000 incluyen visita técnica, asesoría y presupuesto detallado, y se descuentan al 100% al contratar la obra.*`
+      `✨ *Entiendo que la visita desde $30.000 incluye visita técnica, asesoría y presupuesto detallado, y se descuentan al 100% al contratar la obra.*`
     ].filter(Boolean);
 
     return `https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
@@ -107,7 +107,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <span>Visita Técnica en Terreno • Región de Valparaíso</span>
             </div>
             <h3 className="font-['Outfit'] text-xl sm:text-2xl font-bold text-white">
-              Agendar Presupuesto & Visita ($30.000 CLP)
+              Agendar Presupuesto & Visita (desde $30.000 CLP)
             </h3>
           </div>
 
@@ -142,7 +142,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs text-slate-300 text-left space-y-2">
                 <div className="text-blue-400 font-bold flex items-center justify-between">
                   <span>Resumen de tu Visita Técnica:</span>
-                  <span>$30.000 CLP</span>
+                  <span>desde $30.000 CLP</span>
                 </div>
                 <ul className="space-y-1 text-slate-400">
                   <li>• Asistencia presencial en tu terreno ({commune})</li>
@@ -179,7 +179,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               <div className="bg-blue-950/50 border border-blue-500/30 rounded-xl p-3.5 flex items-start gap-3">
                 <Sparkles className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                 <p className="text-xs text-blue-200 leading-relaxed">
-                  <strong>Valor de la visita: $30.000 CLP.</strong> Incluye visita en terreno, asesoría constructiva y un presupuesto detallado de tu obra. <strong>Si contratas la obra, este valor se descuenta al 100% del total.</strong>
+                  <strong>Valor de la visita: desde $30.000 CLP.</strong> Incluye visita en terreno, asesoría constructiva y un presupuesto detallado de tu obra. <strong>Si contratas la obra, este valor se descuenta al 100% del total.</strong>
                 </p>
               </div>
 
@@ -325,7 +325,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
                   type="submit"
                   className="w-full sm:w-2/3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2 active:scale-95"
                 >
-                  <span>Continuar y Coordinar Visita ($30K)</span>
+                  <span>Continuar y Coordinar Visita (desde $30K)</span>
                 </button>
 
                 <button

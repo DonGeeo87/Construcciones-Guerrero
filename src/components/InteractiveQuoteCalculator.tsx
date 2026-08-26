@@ -102,7 +102,7 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
       `📋 *Requiere regularización/permiso:* ${needsPermits ? 'Sí' : 'No / En evaluación'}`,
       clientName ? `👤 *Nombre:* ${clientName}` : '',
       customNotes ? `💬 *Detalles adicionales:* ${customNotes}` : '',
-      `✨ *Me interesa agendar la visita en terreno de $30.000 con presupuesto detallado.*`
+      `✨ *Me interesa agendar la visita en terreno (desde $30.000) con presupuesto detallado.*`
     ].filter(Boolean);
 
     return encodeURIComponent(lines.join('\n'));
@@ -343,7 +343,7 @@ export default function InteractiveQuoteCalculator({ onOpenBookingModal }: Inter
             <div className="bg-blue-600/15 border border-blue-500/30 rounded-xl p-4 space-y-2">
               <div className="flex items-center justify-between text-xs text-blue-300 font-bold">
                 <span>Visita Técnica & Presupuesto:</span>
-                <span className="text-base text-blue-400 font-extrabold">$30.000 CLP</span>
+                <span className="text-base text-blue-400 font-extrabold">desde $30.000 CLP</span>
               </div>
               <p className="text-[11px] text-blue-200/90 leading-snug">
                 Incluye visita en terreno, asesoría y un presupuesto detallado que se descuenta al 100% de la obra contratada.

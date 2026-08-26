@@ -52,7 +52,7 @@ export default function Footer({ onOpenBookingModal }: FooterProps) {
             <div className="bg-slate-900 border border-slate-800 rounded-xl p-3.5 text-xs text-slate-300 space-y-1">
               <div className="text-blue-400 font-bold flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4" />
-                <span>Presupuesto con Visita en Terreno: $30.000</span>
+                <span>Presupuesto con Visita en Terreno: desde $30.000</span>
               </div>
               <p className="text-slate-400 text-[11px]">
                 Incluye visita en terreno y asesoría técnica. <strong>100% descontable</strong> si contratas la obra.
@@ -151,7 +151,7 @@ export default function Footer({ onOpenBookingModal }: FooterProps) {
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition-colors shadow-md flex items-center justify-center gap-2"
             >
               <Compass className="w-4 h-4" />
-              <span>Agendar Visita en Terreno ($30K)</span>
+              <span>Agendar Visita en Terreno (desde $30K)</span>
             </button>
           </div>
 

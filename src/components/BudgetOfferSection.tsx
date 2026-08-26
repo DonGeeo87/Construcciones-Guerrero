@@ -67,11 +67,14 @@ export default function BudgetOfferSection({ onOpenBookingModal }: BudgetOfferSe
           </div>
 
           <h2 className="font-['Outfit'] text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
-            Presupuesto con Visita en Terreno por solo{' '}
+            Presupuesto con Visita en Terreno desde{' '}
             <span className="text-blue-600">
               $30.000 CLP
             </span>
           </h2>
+          <p className="text-slate-500 text-sm font-medium">
+            El valor de la visita parte en $30.000 y varía según la distancia desde nuestro punto de partida en Limache y Quilpué.
+          </p>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             No cobramos por dar un número al azar. Realizamos una revisión real de tu espacio y te entregamos un <strong>presupuesto detallado y transparente</strong> para tu remodelación, pintura, cierre, terraza o techado.
@@ -166,7 +169,7 @@ export default function BudgetOfferSection({ onOpenBookingModal }: BudgetOfferSe
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all active:scale-95 text-sm group"
             >
               <Compass className="w-5 h-5 text-white" />
-              <span>Agendar Visita ($30.000)</span>
+              <span>Agendar Visita (desde $30.000)</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>

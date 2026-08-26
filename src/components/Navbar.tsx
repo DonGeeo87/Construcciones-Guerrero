@@ -91,7 +91,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
             <a
               id="nav-whatsapp-direct-btn"
               href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(
-                'Hola, quiero cotizar un proyecto y agendar la visita de $30.000 en la Región de Valparaíso.'
+                'Hola, quiero cotizar un proyecto y agendar la visita (desde $30.000) en la Región de Valparaíso.'
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-all shadow-md active:scale-95"
             >
               <Compass className="w-4 h-4" />
-              <span>Agendar Visita $30K</span>
+              <span>Agendar Visita desde $30K</span>
             </button>
           </div>
 
@@ -145,7 +145,7 @@ export default function Navbar({ onOpenBookingModal }: NavbarProps) {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-900 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-blue-600 shrink-0" />
-              <span>Presupuesto con visita en terreno: <strong>$30.000 CLP</strong></span>
+              <span>Presupuesto con visita en terreno: <strong>desde $30.000 CLP</strong></span>
             </div>
             <span className="bg-blue-600 text-white px-2 py-0.5 rounded text-[10px] font-bold uppercase">
               100% Descontable

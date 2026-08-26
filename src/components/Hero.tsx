@@ -114,7 +114,7 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-blue-400 text-slate-200 hover:text-white font-bold px-5 py-3 rounded-xl transition-all shadow-sm active:scale-95 text-sm whitespace-nowrap"
               >
                 <Wrench className="w-5 h-5 text-blue-400" />
-                <span>Agendar Visita ($30.000)</span>
+                <span>Agendar Visita (desde $30.000)</span>
               </button>
             </div>
 
@@ -154,6 +154,7 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
                 </div>
                 <div className="text-4xl sm:text-5xl font-black text-blue-600 my-1">
                   $30.000 <span className="text-sm text-slate-500 font-normal">CLP</span>
+                  <div className="text-[11px] text-slate-500 font-medium mt-1">desde · según distancia de Limache/Quilpué</div>
                 </div>
                 <p className="text-xs text-blue-800 bg-blue-50 py-1 px-3 rounded-full inline-block font-bold mt-1">
                   Visita técnica + Asesoría + Presupuesto detallado
@@ -193,14 +194,14 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
                 onClick={onOpenBookingModal}
                 className="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2 group"
               >
-                <span>Agendar mi Visita por $30.000</span>
+                <span>Agendar mi Visita (desde $30.000)</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
 
               <div className="mt-3 text-center">
                 <a
                   href={`https://wa.me/${WHATSAPP_RAW_NUMBER}?text=${encodeURIComponent(
-                    'Hola, me gustaría agendar la visita en terreno de $30.000.'
+                    'Hola, me gustaría agendar la visita en terreno (desde $30.000).'
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
